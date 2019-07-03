@@ -69,4 +69,4 @@ Read
 * [Tutorial Point](https://www.tutorialspoint.com/data_structures_algorithms/quick_sort_algorithm.htm)
 
 Bookmark
-* [Wiki Quick Sort](https://en.wikipedia.org/wiki/Quicksort
+* [Wiki Quick Sort](https://en.wikipedia.org/wiki/Quicksort)
