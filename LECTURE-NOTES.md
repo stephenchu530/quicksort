@@ -3,7 +3,7 @@
 This sort is one of the more common sorts used in many built-in sorts. We should care because it is ubiquitous.
 
 Quick Sort has the following performance profile:
-* Time Complexity: `O(nlg(n))`
+* Time Complexity: `O(n^2)`
 * Space Complexity: `O(lg(n))`
 
 ## Learning Objectives:
