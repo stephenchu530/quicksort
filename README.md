@@ -37,7 +37,7 @@ Ensure the following are installed:
 ```
 
 ## Approach & Efficiency
-`public static int[] quickSort(int[] numbers)` - O(nlg(n))
+`public static int[] quickSort(int[] numbers)` - O(n^2)
 
 ## Solution / Lecture Notes
 * [Solution Code](src/main/java/quicksort/App.java)
