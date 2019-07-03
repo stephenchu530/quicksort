@@ -1,16 +1,16 @@
-# Merge Sort
+# Quick Sort
 
 ## Description/Challenge Summary
-This project uses Java Spring and other dependencies to create a "lecture" on `Merge Sort` suitable for Code Fellow's 301 level course.
+This project uses Java Spring and other dependencies to create a "lecture" on `Quick Sort` suitable for Code Fellow's 301 level course.
 
 ## Installation
 
 ```
- $ git clone git@github.com:stephenchu530/mergesort.git
+ $ git clone git@github.com:stephenchu530/quicksort.git
 ```
 or
 ```
- $ git clone https://github.com/stephenchu530/mergesort.git
+ $ git clone https://github.com/stephenchu530/quicksort.git
 ```
 
 ## Requirements:
@@ -37,14 +37,14 @@ Ensure the following are installed:
 ```
 
 ## Approach & Efficiency
-`public static int[] mergeSort(int[] numbers)` - O(nlg(n))
+`public static int[] quickSort(int[] numbers)` - O(nlg(n))
 
 ## Solution / Lecture Notes
-* [Solution Code](src/main/java/mergesort/App.java)
+* [Solution Code](src/main/java/quicksort/App.java)
 * [Lecture Notes](LECTURE-NOTES.md)
 
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/stephenchu530/mergesort/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/stephenchu530/quicksort/blob/master/LICENSE)
