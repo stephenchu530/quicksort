@@ -3,12 +3,58 @@
  */
 package quicksort;
 
+import java.util.Arrays;
+
+import static java.lang.Integer.parseInt;
+
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
+    public static void main(String[] args) {
+        if (args.length > 0)
+            System.out.println(Arrays.toString(quickSort(strArrToIntArr(args))));
+        else
+            System.out.println("Please provide some arguments");
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static int[] quickSort(int[] numbers) {
+        qSort(numbers, 0, numbers.length - 1);
+        return numbers;
+    }
+
+    public static void qSort(int[] arr, int left, int right) {
+        int position = 0;
+        if (left < right) {
+            position = partition(arr, left, right);
+            qSort(arr, left, position - 1);
+            qSort(arr, position + 1, right);
+        }
+    }
+
+    public static int partition(int[] arr, int left, int right) {
+        int pivot = arr[right];
+        int low = left - 1;
+
+        for (int i = left; i < right; i++) {
+            if (arr[i] <= pivot) {
+                low++;
+                swap(arr, i, low);
+            }
+        }
+        swap(arr, right, low + 1);
+        return low + 1;
+    }
+
+    public static void swap(int[] arr, int i, int low) {
+        int temp = arr[i];
+        arr[i] = arr[low];
+        arr[low] = temp;
+    }
+
+    public static int[] strArrToIntArr(String[] args) {
+        int numbers[] = new int[args.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = parseInt(args[i]);
+        }
+        return numbers;
     }
 }
